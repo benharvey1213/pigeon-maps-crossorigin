@@ -97,6 +97,7 @@ function srcSet(
 
 const ImgTile: TileComponent = ({ tile, tileLoaded }) => (
   <img
+    crossOrigin="anonymous"
     src={tile.url}
     srcSet={tile.srcSet}
     width={tile.width}
